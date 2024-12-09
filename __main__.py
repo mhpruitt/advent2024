@@ -1,4 +1,4 @@
-import day7
+import day8
 
 if __name__ == "__main__":
-    day7.main()
+    day8.main()
