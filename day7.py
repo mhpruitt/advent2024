@@ -21,7 +21,9 @@ def solve(target: int, values: list[int], operations) -> bool:
         state[pos] = set()
         for value in state[pos - 1]:
             for op in operations:
-                state[pos].add(op(value, values[pos]))
+                result = op(value, values[pos])
+                if result <= target:
+                    state[pos].add(result)
 
     return target in state[len(values) - 1]
 
