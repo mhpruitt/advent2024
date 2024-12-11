@@ -3,6 +3,7 @@
 
 https://adventofcode.com/2024/day/9
 """
+
 from collections import deque
 from copy import deepcopy
 
@@ -69,8 +70,6 @@ def confusing_defrag(blocks):
 
             for i in range(best_pos, best_pos + file_size):
                 blocks[i] = current_id
-
-        print(current_id)
 
     return blocks
 
